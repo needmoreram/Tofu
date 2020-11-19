@@ -95,12 +95,12 @@
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AVc-5o-PUk">
                                             <rect key="frame" x="94" y="10.666666666666664" width="290" height="62.999999999999993"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="012 345" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="kuh-hx-0vn">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="012 345" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="kuh-hx-0vn">
                                                     <rect key="frame" x="0.0" y="-4" width="290" height="53"/>
                                                     <fontDescription key="fontDescription" type="system" weight="thin" pointSize="44"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Example (test@example.com)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S0M-xR-VeY">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Example (test@example.com)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S0M-xR-VeY">
                                                     <rect key="frame" x="1" y="45" width="289" height="18"/>
                                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                                     <nil key="textColor"/>
@@ -155,7 +155,7 @@
                                     <action selector="addAccount:" destination="bOu-aX-zXX" id="Gxq-TA-Oug"/>
                                 </connections>
                             </barButtonItem>
-                            <barButtonItem title="Settings" image="gear" catalog="system" style="plain" id="DWM-pI-ziE">
+                            <barButtonItem title="Settings" image="gear" catalog="system" id="DWM-pI-ziE">
                                 <connections>
                                     <segue destination="2Bz-uX-abM" kind="presentation" id="N4T-ej-dCo"/>
                                 </connections>
@@ -808,7 +808,6 @@
         <scene sceneID="XX2-tv-iJr">
             <objects>
                 <navigationController id="2Bz-uX-abM" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="jjk-Zh-xM7"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="OMw-Mc-cao">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
