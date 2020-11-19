@@ -54,7 +54,10 @@ class AccountsViewController: UITableViewController, UIImagePickerControllerDele
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let navigationController = segue.destination as? UINavigationController {
-            if let accountCreationViewController = navigationController.topViewController
+            if let settingsViewController = navigationController.topViewController
+                as? SettingsViewController {
+                // settingsViewController.delegate = self
+            } else if let accountCreationViewController = navigationController.topViewController
                 as? AccountCreationViewController {
                 accountCreationViewController.delegate = self
             } else {
