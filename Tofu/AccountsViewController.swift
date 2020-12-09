@@ -7,6 +7,7 @@ class AccountsViewController: UITableViewController, UIImagePickerControllerDele
 
     private let keychain = Keychain()
     private var accounts = [Account]()
+    private let settings = Settings()
     private let qrImporter = UIImagePickerController()
 
     private lazy var searchController = makeSearchController()
@@ -357,5 +358,18 @@ extension AccountsViewController: AccountUpdateDelegate {
         alertController.addAction(cancelAction)
 
         present(alertController, animated: true, completion: nil)
+    }
+}
+
+extension AccountsViewController: SettingsUpdateDelegate {
+    func updateSettings(_ changes: ListOfSettings) {
+        guard settings.updateSettings(changes) else {
+            presentTryAgainAlertWithTitle(
+                "Could Not Update Settings",
+                message: "An error occurred when trying to save settings.") {
+                self.updateSettings(changes)
+            }
+            return
+        }
     }
 }
